@@ -8,21 +8,20 @@
 
     <?= csrf_field() ?>
 
+
     <div class="form-group">
         <label for="name">Name</label>
-        <input type="name" class="form-control" id="name" placeholder="Name">
+        <input type="name" class="form-control" id="name" placeholder="Name" name="name">
     </div>
     <div class="form-group">
         <label for="Email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Email">
+        <input type="email" class="form-control" id="email" placeholder="Email" name="email">
     </div>
     <div class="form-group">
         <label for="message">Message</label>
-        <textarea class="form-control " id="message" rows="5" placeholder="Enter Your Message"></textarea>
+        <textarea class="form-control " id="message" rows="5" placeholder="Enter Your Message" name="message"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
-
 
 @endsection
